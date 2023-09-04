@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9138E2BAC5BA4F73CF2A437 /* Pods_iOS10_HW21_Bessonov_Ilia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99532A1034C5B4813F59EE6 /* Pods_iOS10_HW21_Bessonov_Ilia.framework */; };
 		FAA35AAE2A9F1F24004EDCF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA35AAD2A9F1F24004EDCF4 /* AppDelegate.swift */; };
 		FAA35AB02A9F1F24004EDCF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA35AAF2A9F1F24004EDCF4 /* SceneDelegate.swift */; };
-		FAA35AB22A9F1F24004EDCF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA35AB12A9F1F24004EDCF4 /* ViewController.swift */; };
-		FAA35AB52A9F1F24004EDCF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA35AB32A9F1F24004EDCF4 /* Main.storyboard */; };
 		FAA35AB72A9F1F26004EDCF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA35AB62A9F1F26004EDCF4 /* Assets.xcassets */; };
 		FAA35ABA2A9F1F26004EDCF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA35AB82A9F1F26004EDCF4 /* LaunchScreen.storyboard */; };
+		FAA35AC82A9F2269004EDCF4 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA35AC72A9F2269004EDCF4 /* MainScreenViewController.swift */; };
+		FAA35ACD2A9F2F7A004EDCF4 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA35ACC2A9F2F7A004EDCF4 /* UIView+Extensions.swift */; };
+		FAA35AD02A9F464D004EDCF4 /* MarvelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA35ACF2A9F464D004EDCF4 /* MarvelData.swift */; };
+		FAA35AD72A9F6156004EDCF4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA35AD62A9F6156004EDCF4 /* NetworkManager.swift */; };
+		FAA35ADA2A9F7AD5004EDCF4 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA35AD92A9F7AD5004EDCF4 /* ErrorMessage.swift */; };
+		FAA35ADC2A9F97C6004EDCF4 /* MarvelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA35ADB2A9F97C6004EDCF4 /* MarvelTableViewCell.swift */; };
+		FAA35AE22AA25766004EDCF4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA35AE12AA25766004EDCF4 /* DetailViewController.swift */; };
+		FAA35AE62AA336B8004EDCF4 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA35AE52AA336B8004EDCF4 /* AlertViewController.swift */; };
+		FAA35AE82AA3477A004EDCF4 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA35AE72AA3477A004EDCF4 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D70023F21B6DE47A4763F7A /* Pods-iOS10-HW21-Bessonov Ilia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS10-HW21-Bessonov Ilia.release.xcconfig"; path = "Target Support Files/Pods-iOS10-HW21-Bessonov Ilia/Pods-iOS10-HW21-Bessonov Ilia.release.xcconfig"; sourceTree = "<group>"; };
+		E99532A1034C5B4813F59EE6 /* Pods_iOS10_HW21_Bessonov_Ilia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS10_HW21_Bessonov_Ilia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA35AAA2A9F1F24004EDCF4 /* iOS10-HW21-Bessonov Ilia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS10-HW21-Bessonov Ilia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA35AAD2A9F1F24004EDCF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA35AAF2A9F1F24004EDCF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAA35AB12A9F1F24004EDCF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAA35AB42A9F1F24004EDCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAA35AB62A9F1F26004EDCF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA35AB92A9F1F26004EDCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA35ABB2A9F1F26004EDCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA35AC72A9F2269004EDCF4 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		FAA35ACC2A9F2F7A004EDCF4 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		FAA35ACF2A9F464D004EDCF4 /* MarvelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelData.swift; sourceTree = "<group>"; };
+		FAA35AD62A9F6156004EDCF4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FAA35AD92A9F7AD5004EDCF4 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		FAA35ADB2A9F97C6004EDCF4 /* MarvelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableViewCell.swift; sourceTree = "<group>"; };
+		FAA35AE12AA25766004EDCF4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FAA35AE52AA336B8004EDCF4 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		FAA35AE72AA3477A004EDCF4 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		FE210646CE24E80475069B55 /* Pods-iOS10-HW21-Bessonov Ilia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS10-HW21-Bessonov Ilia.debug.xcconfig"; path = "Target Support Files/Pods-iOS10-HW21-Bessonov Ilia/Pods-iOS10-HW21-Bessonov Ilia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9138E2BAC5BA4F73CF2A437 /* Pods_iOS10_HW21_Bessonov_Ilia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3136B3B001894ADE6A1292AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE210646CE24E80475069B55 /* Pods-iOS10-HW21-Bessonov Ilia.debug.xcconfig */,
+				1D70023F21B6DE47A4763F7A /* Pods-iOS10-HW21-Bessonov Ilia.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C30B8D836E070649CE298384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E99532A1034C5B4813F59EE6 /* Pods_iOS10_HW21_Bessonov_Ilia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAA35AA12A9F1F24004EDCF4 = {
 			isa = PBXGroup;
 			children = (
 				FAA35AAC2A9F1F24004EDCF4 /* iOS10-HW21-Bessonov Ilia */,
 				FAA35AAB2A9F1F24004EDCF4 /* Products */,
+				3136B3B001894ADE6A1292AD /* Pods */,
+				C30B8D836E070649CE298384 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +94,126 @@
 		FAA35AAC2A9F1F24004EDCF4 /* iOS10-HW21-Bessonov Ilia */ = {
 			isa = PBXGroup;
 			children = (
-				FAA35AAD2A9F1F24004EDCF4 /* AppDelegate.swift */,
-				FAA35AAF2A9F1F24004EDCF4 /* SceneDelegate.swift */,
-				FAA35AB12A9F1F24004EDCF4 /* ViewController.swift */,
-				FAA35AB32A9F1F24004EDCF4 /* Main.storyboard */,
-				FAA35AB62A9F1F26004EDCF4 /* Assets.xcassets */,
-				FAA35AB82A9F1F26004EDCF4 /* LaunchScreen.storyboard */,
-				FAA35ABB2A9F1F26004EDCF4 /* Info.plist */,
+				FAA35AD82A9F7A7E004EDCF4 /* Utilities */,
+				FAA35AD52A9F6121004EDCF4 /* Managers */,
+				FAA35ACE2A9F2F99004EDCF4 /* Model */,
+				FAA35ACB2A9F2F2A004EDCF4 /* Extensions */,
+				FAA35AC12A9F2004004EDCF4 /* Sources */,
+				FAA35AC22A9F2016004EDCF4 /* Resources */,
 			);
 			path = "iOS10-HW21-Bessonov Ilia";
+			sourceTree = "<group>";
+		};
+		FAA35AC12A9F2004004EDCF4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35AC52A9F21E6004EDCF4 /* Ui */,
+				FAA35AC42A9F205D004EDCF4 /* Storyboards */,
+				FAA35AC32A9F2047004EDCF4 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FAA35AC22A9F2016004EDCF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35AB62A9F1F26004EDCF4 /* Assets.xcassets */,
+				FAA35ABB2A9F1F26004EDCF4 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAA35AC32A9F2047004EDCF4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35AAD2A9F1F24004EDCF4 /* AppDelegate.swift */,
+				FAA35AAF2A9F1F24004EDCF4 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAA35AC42A9F205D004EDCF4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35AB82A9F1F26004EDCF4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FAA35AC52A9F21E6004EDCF4 /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35AE42AA33624004EDCF4 /* Alert */,
+				FAA35AC62A9F2241004EDCF4 /* MainScreen */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		FAA35AC62A9F2241004EDCF4 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35AE32AA2578B004EDCF4 /* Details */,
+				FAA35ADD2A9F97D2004EDCF4 /* Cells */,
+				FAA35AC72A9F2269004EDCF4 /* MainScreenViewController.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		FAA35ACB2A9F2F2A004EDCF4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35ACC2A9F2F7A004EDCF4 /* UIView+Extensions.swift */,
+				FAA35AE72AA3477A004EDCF4 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAA35ACE2A9F2F99004EDCF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35ACF2A9F464D004EDCF4 /* MarvelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAA35AD52A9F6121004EDCF4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35AD62A9F6156004EDCF4 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FAA35AD82A9F7A7E004EDCF4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35AD92A9F7AD5004EDCF4 /* ErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FAA35ADD2A9F97D2004EDCF4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35ADB2A9F97C6004EDCF4 /* MarvelTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAA35AE32AA2578B004EDCF4 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35AE12AA25766004EDCF4 /* DetailViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		FAA35AE42AA33624004EDCF4 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				FAA35AE52AA336B8004EDCF4 /* AlertViewController.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA35ABE2A9F1F26004EDCF4 /* Build configuration list for PBXNativeTarget "iOS10-HW21-Bessonov Ilia" */;
 			buildPhases = (
+				12D0E60983C2E54BD7E7F825 /* [CP] Check Pods Manifest.lock */,
 				FAA35AA62A9F1F24004EDCF4 /* Sources */,
 				FAA35AA72A9F1F24004EDCF4 /* Frameworks */,
 				FAA35AA82A9F1F24004EDCF4 /* Resources */,
+				2E2741011D02232780CBCD51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +278,75 @@
 			files = (
 				FAA35ABA2A9F1F26004EDCF4 /* LaunchScreen.storyboard in Resources */,
 				FAA35AB72A9F1F26004EDCF4 /* Assets.xcassets in Resources */,
-				FAA35AB52A9F1F24004EDCF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12D0E60983C2E54BD7E7F825 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS10-HW21-Bessonov Ilia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E2741011D02232780CBCD51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS10-HW21-Bessonov Ilia/Pods-iOS10-HW21-Bessonov Ilia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS10-HW21-Bessonov Ilia/Pods-iOS10-HW21-Bessonov Ilia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS10-HW21-Bessonov Ilia/Pods-iOS10-HW21-Bessonov Ilia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAA35AA62A9F1F24004EDCF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA35AB22A9F1F24004EDCF4 /* ViewController.swift in Sources */,
+				FAA35AD72A9F6156004EDCF4 /* NetworkManager.swift in Sources */,
 				FAA35AAE2A9F1F24004EDCF4 /* AppDelegate.swift in Sources */,
+				FAA35ADA2A9F7AD5004EDCF4 /* ErrorMessage.swift in Sources */,
 				FAA35AB02A9F1F24004EDCF4 /* SceneDelegate.swift in Sources */,
+				FAA35AE82AA3477A004EDCF4 /* UIViewController+Extensions.swift in Sources */,
+				FAA35ADC2A9F97C6004EDCF4 /* MarvelTableViewCell.swift in Sources */,
+				FAA35ACD2A9F2F7A004EDCF4 /* UIView+Extensions.swift in Sources */,
+				FAA35AE62AA336B8004EDCF4 /* AlertViewController.swift in Sources */,
+				FAA35AE22AA25766004EDCF4 /* DetailViewController.swift in Sources */,
+				FAA35AD02A9F464D004EDCF4 /* MarvelData.swift in Sources */,
+				FAA35AC82A9F2269004EDCF4 /* MainScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FAA35AB32A9F1F24004EDCF4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAA35AB42A9F1F24004EDCF4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAA35AB82A9F1F26004EDCF4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +474,7 @@
 		};
 		FAA35ABF2A9F1F26004EDCF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE210646CE24E80475069B55 /* Pods-iOS10-HW21-Bessonov Ilia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,12 +482,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9S7JT7L3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS10-HW21-Bessonov Ilia/Info.plist";
+				INFOPLIST_FILE = "iOS10-HW21-Bessonov Ilia/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +503,7 @@
 		};
 		FAA35AC02A9F1F26004EDCF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D70023F21B6DE47A4763F7A /* Pods-iOS10-HW21-Bessonov Ilia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,12 +511,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C9S7JT7L3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS10-HW21-Bessonov Ilia/Info.plist";
+				INFOPLIST_FILE = "iOS10-HW21-Bessonov Ilia/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

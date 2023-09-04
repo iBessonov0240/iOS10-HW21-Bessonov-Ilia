@@ -1,0 +1,6 @@
+framework module Pods_iOS10_HW21_Bessonov_Ilia {
+  umbrella header "Pods-iOS10-HW21-Bessonov Ilia-umbrella.h"
+
+  export *
+  module * { export * }
+}
