@@ -19,7 +19,7 @@ struct MarvelResults: Codable {
 struct Results: Codable {
     var title: String? = ""
     var modified: String? = ""
-    var thumbnail: [Thumbnail]?
+    var thumbnail: Thumbnail?
     var description: String? = ""
 }
 

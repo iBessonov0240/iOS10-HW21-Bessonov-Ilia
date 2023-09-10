@@ -11,6 +11,7 @@ class MainScreenViewController: UIViewController {
 
     private var marvelData: [Results]?
     private var filteredData = [Results]()
+    private var searchWorkItem: DispatchWorkItem?
 
     // MARK: - Outlets
 
@@ -138,20 +139,28 @@ extension MainScreenViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-// MARK: - UI
+// MARK: - UITextFieldDelegate
 
 extension MainScreenViewController: UITextFieldDelegate {
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+
+        searchWorkItem?.cancel()
+        let newWorkItem = DispatchWorkItem { [weak self] in
+            self?.filterText(textField.text ?? "")
+        }
+        searchWorkItem = newWorkItem
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: newWorkItem)
+
         return true
     }
 
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        filterText(textField.text ?? "")
-    }
-
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        filterText("")
+
+        searchWorkItem?.cancel()
+        filteredData = []
+        tableView.reloadData()
+        
         return true
     }
 

@@ -12,14 +12,26 @@ class MarvelTableViewCell: UITableViewCell {
 
     var marvelData: Results? {
         didSet {
-            if let thumbnail = marvelData?.thumbnail?.first {
+            if let thumbnail = marvelData?.thumbnail {
                 let imageURLString = thumbnail.path + "." + thumbnail.imageExtension
                 if let url = URL(string: imageURLString) {
                     personImage.af.setImage(withURL: url)
                 }
             }
             titleLabel.text = "\(marvelData?.title ?? "")"
-            modifiedLabel.text = "\(marvelData?.modified ?? "")"
+
+            if let modifiedDate = marvelData?.modified {
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+//                if let formattedDate = dateFormatter.date(from: modifiedDate) {
+                if let date = parseDate(dateString: modifiedDate, formatter: dateFormatter) {
+                    dateFormatter.dateFormat = "MMM d, yyyy"
+                    let dateString = dateFormatter.string(from: date)
+                    modifiedLabel.text = dateString
+                }
+            } else {
+                modifiedLabel.text = ""
+            }
         }
     }
 
@@ -74,6 +86,15 @@ class MarvelTableViewCell: UITableViewCell {
     }
 
     // MARK: - Setup
+
+    private func parseDate(dateString: String, formatter: DateFormatter) -> Date? {
+        // Remove the negative year symbol
+        var cleanedDateString = dateString
+        if cleanedDateString.hasPrefix("-") {
+            cleanedDateString.removeFirst()
+        }
+        return formatter.date(from: cleanedDateString)
+    }
 
     private func setupHierarchy() {
         contentView.addSubviews([personImage, titleLabel, modifiedLabel])
