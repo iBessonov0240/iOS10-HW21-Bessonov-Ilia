@@ -19,5 +19,22 @@ struct MarvelResults: Codable {
 struct Results: Codable {
     var title: String? = ""
     var modified: String? = ""
+    var thumbnail: [Thumbnail]?
     var description: String? = ""
+}
+
+struct Thumbnail: Codable {
+    let path: String
+    let imageExtension: String
+
+    private enum CodingKeys: String, CodingKey {
+        case path
+        case imageExtension = "extension"
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        path = try container.decode(String.self, forKey: .path)
+        imageExtension = try container.decode(String.self, forKey: .imageExtension)
+    }
 }
